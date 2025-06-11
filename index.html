@@ -1,24 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élégance Dorée</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class="navbar">
-    <img src="images/logo.png" class="logo">
-    <div class="links">
-      <a href="" class="link">Présentation</a>
-      <a href="" class="link">Team</a>
-      <a href="" class="link">Contact</a>
-      
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="my_class_0008">Élégance Dorée</div>
+        <ul class="nav-links">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Sur mesure</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="cart">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+        </div>
+    </nav>
 
-      
+    <!-- Séparateur -->
+    <div class="separator"></div>
+
+    <!-- Section principale -->
+    <main>
+        <!-- Section 1 - Titre et image du bijou principal -->
+        <section class="hero">
+            <div class="hero-title">
+                <h1>L'éclat qui illumine votre beauté</h1>
+            </div>
+            <div class="hero-image">
+                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/image 1.jpeg" alt="Collier en diamant élégant">
+            </div>
+        </section>
+
+        <!-- Section 2 - Texte de bienvenue -->
+        <section class="welcome">
+            <div class="welcome-text">
+                <h2>Bienvenue dans l'univers du luxe</h2>
+                <div class="welcome-description">
+                    <p>Chaque bijou raconte une histoire. Peut-être celle d'un amour éternel, d'une célébration mémorable, ou simplement l'expression de votre élégance naturelle. Nos créations uniques subliment chaque moment de votre vie avec raffinement et distinction.</p>
+                    <a href="#" class="learn-more">Découvrir notre histoire ></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 - Produit principal -->
+        <section class="product">
+            <div class="product-image">
+                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/Image bague 1.jpeg" alt="Bague solitaire premium">
+            </div>
+            <div class="product-info">
+                <div class="product-display">
+                    <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/Image bague 2.webp" alt="Bague Aurore">
+                    <div class="product-details">
+                        <h3>Bague Aurore</h3>
+                        <p class="price">890,00 €</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section des produits déroulante -->
+    <section class="section-produits">
+        <div class="conteneur-produits">
+            <div class="carousel-wrapper">
+                <div class="produits-carousel">
+                    <!-- Produit 1: Collier Céleste -->
+                    <div class="carte-produit">
+                        <a href="#" class="lien-produit">
+                            <div class="image-produit">
+                                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/COllier 1.avif" alt="Collier Céleste en perles">
+                            </div>
+                            <h3 class="nom-produit">Collier Céleste</h3>
+                            <p class="prix-produit">450 €</p>
+                            <button class="bouton-voir">Voir le collier</button>
+                        </a>
+                    </div>
+
+                    <!-- Produit 2: Bracelet Éternité -->
+                    <div class="carte-produit">
+                        <a href="#" class="lien-produit">
+                            <div class="image-produit">
+                                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/photo bracelet.jpeg" alt="Bracelet Éternité en or">
+                            </div>
+                            <h3 class="nom-produit">Bracelet Éternité</h3>
+                            <p class="prix-produit">680 €</p>
+                            <button class="bouton-voir">Voir le bracelet</button>
+                        </a>
+                    </div>
+
+                    <!-- Produit 3: Boucles d'oreilles Lumière -->
+                    <div class="carte-produit">
+                        <a href="#" class="lien-produit">
+                            <div class="image-produit">
+                                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/photo boucles.webp" alt="Boucles d'oreilles Lumière">
+                            </div>
+                            <h3 class="nom-produit">Boucles Lumière</h3>
+                            <p class="prix-produit">320 €</p>
+                            <button class="bouton-voir">Voir les boucles</button>
+                        </a>
+                    </div>
+
+                    <!-- Produit 4: Pendentif Constellation -->
+                    <div class="carte-produit">
+                        <a href="#" class="lien-produit">
+                            <div class="image-produit">
+                                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/Photo pendentif.webp" alt="Pendentif Constellation">
+                            </div>
+                            <h3 class="nom-produit">Pendentif Constellation</h3>
+                            <p class="prix-produit">750 €</p>
+                            <button class="bouton-voir">Voir le pendentif</button>
+                        </a>
+                    </div>
+
+                    <!-- Produit 5: Montre Prestige -->
+                    <div class="carte-produit">
+                        <a href="#" class="lien-produit">
+                            <div class="image-produit">
+                                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/montre.webp" alt="Montre Prestige">
+                            </div>
+                            <h3 class="nom-produit">Montre Prestige</h3>
+                            <p class="prix-produit">1200 €</p>
+                            <button class="bouton-voir">Voir la montre</button>
+                        </a>
+                    </div>
+
+                    <!-- Produit 6: Parure Royale -->
+                    <div class="carte-produit">
+                        <a href="#" class="lien-produit">
+                            <div class="image-produit">
+                                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/Photo pendentif.webp" alt="Parure Royale">
+                            </div>
+                            <h3 class="nom-produit">Parure Royale</h3>
+                            <p class="prix-produit">1500 €</p>
+                            <button class="bouton-voir">Voir la parure</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flèche pour naviguer -->
+        <button class="fleche-navigation" onclick="naviguerCarousel()">
+            <span class="symbole-fleche">→</span>
+        </button>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="section-testimonials">
+        <div class="testimonials-container">
+            <h2 class="testimonials-title">Témoignages de nos clientes</h2>
+            
+            <div class="testimonial-content">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial active" data-index="0">
+                        <div class="testimonial-avatar">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Visage -->
+                                <circle cx="60" cy="60" r="50" fill="#F4C2A1"/>
+                                <!-- Cheveux élégants -->
+                                <path d="M20 45 Q60 15 100 45 Q100 35 90 30 Q60 10 30 30 Q20 35 20 45" fill="#8B4513"/>
+                                <!-- Yeux -->
+                                <circle cx="45" cy="55" r="3" fill="#000"/>
+                                <circle cx="75" cy="55" r="3" fill="#000"/>
+                                <!-- Cils -->
+                                <path d="M42 52 L48 50" stroke="#000" stroke-width="1"/>
+                                <path d="M72 50 L78 52" stroke="#000" stroke-width="1"/>
+                                <!-- Nez -->
+                                <path d="M60 65 L58 70 L62 70 Z" fill="#E6A080"/>
+                                <!-- Bouche souriante -->
+                                <path d="M50 80 Q60 85 70 80" stroke="#DC143C" stroke-width="2" fill="none"/>
+                                <!-- Collier -->
+                                <ellipse cx="60" cy="105" rx="20" ry="3" fill="#FFD700"/>
+                                <circle cx="60" cy="105" r="2" fill="#FF69B4"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimonial-name">Sophie Dubois</p>
+                            <p class="testimonial-quote">« J'ai acheté ma bague de fiançailles chez Élégance Dorée et je suis absolument enchantée. La qualité exceptionnelle et le service personnalisé ont rendu ce moment magique inoubliable. »</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial" data-index="1">
+                        <div class="testimonial-avatar">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Visage -->
+                                <circle cx="60" cy="60" r="50" fill="#F4C2A1"/>
+                                <!-- Cheveux bouclés -->
+                                <path d="M15 50 Q60 20 105 50 Q105 40 95 35 Q60 15 25 35 Q15 40 15 50" fill="#D2691E"/>
+                                <!-- Yeux -->
+                                <circle cx="45" cy="55" r="3" fill="#000"/>
+                                <circle cx="75" cy="55" r="3" fill="#000"/>
+                                <!-- Cils -->
+                                <path d="M42 52 L48 50" stroke="#000" stroke-width="1"/>
+                                <path d="M72 50 L78 52" stroke="#000" stroke-width="1"/>
+                                <!-- Nez -->
+                                <path d="M60 65 L58 70 L62 70 Z" fill="#E6A080"/>
+                                <!-- Bouche -->
+                                <path d="M50 80 Q60 85 70 80" stroke="#DC143C" stroke-width="2" fill="none"/>
+                                <!-- Boucles d'oreilles -->
+                                <circle cx="35" cy="70" r="3" fill="#FFD700"/>
+                                <circle cx="85" cy="70" r="3" fill="#FFD700"/>
+                                <!-- Collier -->
+                                <ellipse cx="60" cy="105" rx="18" ry="2" fill="#C0C0C0"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimonial-name">Marie Lefort</p>
+                            <p class="testimonial-quote">« Les bijoux sont magnifiques et d'une finesse remarquable. Le savoir-faire artisanal se ressent dans chaque détail. Je recommande vivement cette maison de joaillerie. »</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial" data-index="2">
+                        <div class="testimonial-avatar">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Visage -->
+                                <circle cx="60" cy="60" r="50" fill="#F4C2A1"/>
+                                <!-- Cheveux longs -->
+                                <path d="M25 45 Q60 25 95 45 Q95 35 85 30 Q60 20 35 30 Q25 35 25 45" fill="#000"/>
+                                <!-- Yeux -->
+                                <circle cx="45" cy="55" r="3" fill="#000"/>
+                                <circle cx="75" cy="55" r="3" fill="#000"/>
+                                <!-- Cils -->
+                                <path d="M42 52 L48 50" stroke="#000" stroke-width="1"/>
+                                <path d="M72 50 L78 52" stroke="#000" stroke-width="1"/>
+                                <!-- Nez -->
+                                <path d="M60 65 L58 70 L62 70 Z" fill="#E6A080"/>
+                                <!-- Bouche -->
+                                <path d="M50 80 Q60 85 70 80" stroke="#DC143C" stroke-width="2" fill="none"/>
+                                <!-- Boucles d'oreilles diamant -->
+                                <polygon points="35,65 32,72 38,72" fill="#E0E0E0"/>
+                                <polygon points="85,65 82,72 88,72" fill="#E0E0E0"/>
+                                <!-- Collier de perles -->
+                                <ellipse cx="60" cy="105" rx="22" ry="3" fill="#FFF"/>
+                                <circle cx="50" cy="105" r="1.5" fill="#FFF"/>
+                                <circle cx="60" cy="105" r="1.5" fill="#FFF"/>
+                                <circle cx="70" cy="105" r="1.5" fill="#FFF"/>
+                            </svg>
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimonial-name">Lucie Martin</p>
+                            <p class="testimonial-quote">« Service client exceptionnel et créations sur mesure sublimes. Chaque pièce est unique et reflète parfaitement ma personnalité. Une adresse incontournable pour les amoureuses de beaux bijoux. »</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-navigation">
+                <button class="nav-btn prev" onclick="changerTemoignage(-1)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-btn next" onclick="changerTemoignage(1)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Section Instagram -->
+<section class="section-instagram">
+    <div class="instagram-container">
+        <h2 class="instagram-title">Suivez-nous sur <a href="https://www.instagram.com" target="_blank" class="instagram-link">Instagram</a></h2>
+        <p class="instagram-subtitle">Votre choix pourrait être la vedette !</p>
+        
+        <div class="instagram-gallery">
+            <div class="instagram-image">
+                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/INSTA 1.webp" alt="Bijou Instagram 1">
+            </div>
+            <div class="instagram-image">
+                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/Insta 2.webp" alt="Bijou Instagram 2">
+            </div>
+            <div class="instagram-image">
+                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/insta 3.webp" alt="Bijou Instagram 3">
+            </div>
+            <div class="instagram-image">
+                <img src="/Users/ninonbeauvisage/Desktop/SITE WEB CULTURE WEB /HTML. CSS/img/insta 4.jpeg" alt="Bijou Instagram 4">
+            </div>
+        </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12986751579!2d-8.090425957757159!3d31.634594879069574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1745401871798!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   
-  </div>
+</section>
+<!-- Section Newsletter -->
+<section class="section-newsletter">
+    <div class="newsletter-container">
+        <div class="newsletter-content">
+            <div class="newsletter-info">
+                <h2 class="newsletter-title">Élégance dorée</h2>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="m16 11.37-1.6-1.6a2 2 0 0 0-2.83 0L8 13.34"/>
+                            <circle cx="9.5" cy="8.5" r="1.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="newsletter-links">
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Contact</a>
+                    <a href="#" class="footer-link">Carte-cadeau</a>
+                </div>
+            </div>
+            
+            <div class="newsletter-signup">
+                <h3 class="signup-title">Recevez des informations sur les nouveautés et les bonnes affaires</h3>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" class="email-input" placeholder="Adresse e-mail" required>
+                        <button type="submit" class="subscribe-btn">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Élégance Dorée. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Script pour le carousel des produits
+        let currentIndex = 0;
+        const totalProducts = 6;
+        const visibleProducts = 3;
+        const maxIndex = totalProducts - visibleProducts;
+
+        function naviguerCarousel() {
+            const carousel = document.querySelector('.produits-carousel');
+            const fleche = document.querySelector('.symbole-fleche');
+            
+            currentIndex++;
+            if (currentIndex > maxIndex) {
+                currentIndex = 0;
+            }
+            
+            const translateX = -(currentIndex * (320 + 30)); // largeur de carte + gap
+            carousel.style.transform = `translateX(${translateX}px)`;
+            
+            // Rotation de la flèche quand on revient au début
+            if (currentIndex === 0) {
+                fleche.style.transform = 'rotate(180deg)';
+                setTimeout(() => {
+                    fleche.style.transform = 'rotate(0deg)';
+                }, 300);
+            }
+            
+        }
+
+        // Script pour les témoignages - Version corrigée
+        let currentTestimonial = 0;
+        const totalTestimonials = 3;
+
+        function changerTemoignage(direction) {
+            const testimonials = document.querySelectorAll('.testimonial');
+            const currentEl = testimonials[currentTestimonial];
+            
+            // Fade out l'élément actuel
+            currentEl.style.opacity = '0';
+            
+            setTimeout(() => {
+                // Retirer la classe active
+                currentEl.classList.remove('active');
+                
+                // Calculer le nouvel index
+                currentTestimonial += direction;
+                if (currentTestimonial >= totalTestimonials) {
+                    currentTestimonial = 0;
+                } else if (currentTestimonial < 0) {
+                    currentTestimonial = totalTestimonials - 1;
+                }
+                
+                // Activer le nouveau témoignage
+                const newEl = testimonials[currentTestimonial];
+                newEl.classList.add('active');
+                
+                // S'assurer que l'élément est centré et réinitialiser les transformations
+                newEl.style.transform = 'translate(-50%, -50%)';
+                newEl.style.opacity = '0';
+                
+                // Fade in avec un petit délai
+                setTimeout(() => {
+                    newEl.style.opacity = '1';
+                }, 50);
+            }, 300);
+            
+            
+        }
+    </script>
 </body>
 </html>
