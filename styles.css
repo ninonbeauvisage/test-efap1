@@ -755,7 +755,7 @@ footer {
     transform: scale(1.1);
 }
 /* CSS pour la section Newsletter */
-<style>
+
 /* Section Newsletter */
 .section-newsletter {
     width: 100vw;
@@ -966,47 +966,6 @@ footer {
         font-size: 14px;
     }
 }
-</style>
-
-<!-- Section Newsletter -->
-<section class="section-newsletter">
-    <div class="newsletter-container">
-        <div class="newsletter-content">
-            <div class="newsletter-info">
-                <h2 class="newsletter-title">Élegance Dorée</h2>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                            <path d="m16 11.37-1.6-1.6a2 2 0 0 0-2.83 0L8 13.34"/>
-                            <circle cx="9.5" cy="8.5" r="1.5"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="newsletter-links">
-                    <a href="#" class="footer-link">FAQ</a>
-                    <a href="#" class="footer-link">Contact</a>
-                    <a href="#" class="footer-link">Carte-cadeau</a>
-                </div>
-            </div>
-            
-            <div class="newsletter-signup">
-                <h3 class="signup-title">Recevez des informations sur les nouveautés et les bonnes affaires</h3>
-                <form class="newsletter-form">
-                    <div class="form-group">
-                        <input type="email" class="email-input" placeholder="Adresse e-mail" required>
-                        <button type="submit" class="subscribe-btn">S'inscrire</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
 /* Responsive pour Instagram */
 @media (max-width: 1024px) {
